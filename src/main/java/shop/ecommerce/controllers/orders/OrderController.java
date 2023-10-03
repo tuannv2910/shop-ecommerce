@@ -13,6 +13,6 @@ import shop.ecommerce.dto.req.order.OrderCheckoutReq;
 public class OrderController {
 
     public ResponseEntity<Object> checkout(@RequestBody OrderCheckoutReq request) {
-        return ResponseEntity.ok();
+        return ResponseEntity.ok().build();
     }
 }
