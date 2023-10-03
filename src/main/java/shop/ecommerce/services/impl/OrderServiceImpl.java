@@ -11,7 +11,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Object checkout(OrderCheckoutReq request) {
-        
+        System.out.println("ok");
         return null;
     }
 }
