@@ -10,4 +10,4 @@ COPY target/*.jar shop-ecommerce.jar
 
 EXPOSE 8080
 
-ENTRYPOINT["java", "-jar","shop-ecommerce.jar"]
+ENTRYPOINT ["java", "-jar","/shop-ecommerce.jar"]
