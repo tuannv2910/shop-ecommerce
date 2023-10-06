@@ -1,10 +1,33 @@
+#server:
+#  port: 8080
+#spring:
+#  datasource:
+#    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}}
+#    username: ${SPRING_DATASOURCE_USERNAME:${PROD_DB_USERNAME}}
+#    password: ${SPRING_DATASOURCE_PASSWORD:${PROD_DB_PASSWORD}}
+#    hikari:
+#      maximum-pool-size: 2
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: ${SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT:org.hibernate.dialect.PostgreSQLDialect}
+#        format_sql: ${SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT-SQL:true}
+#        driverClassName: org.postgresql.Driver
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: false
+#  main:
+#    allow-bean-definition-overriding: true
+#
+#
+
 server:
   port: 8080
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}}
-    username: ${SPRING_DATASOURCE_USERNAME:${PROD_DB_USERNAME}}
-    password: ${SPRING_DATASOURCE_PASSWORD:${PROD_DB_PASSWORD}}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/ghn_order}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:123456}
     hikari:
       maximum-pool-size: 2
   jpa:
@@ -18,3 +41,4 @@ spring:
     show-sql: false
   main:
     allow-bean-definition-overriding: true
+
