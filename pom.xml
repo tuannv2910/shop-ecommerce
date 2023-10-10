@@ -72,6 +72,12 @@
             <artifactId>postgresql</artifactId>
             <version>42.5.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>5.0.1</version>
+        </dependency>
 
 
     </dependencies>
