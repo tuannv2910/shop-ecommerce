@@ -1,6 +1,7 @@
 package shop.ecommerce.entites;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -19,10 +20,10 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Data
 @EntityListeners(AuditingEntityListener.class)
+@Builder
 public class Order {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
     private String to_phone;
     private String to_name;
     private String to_address;
